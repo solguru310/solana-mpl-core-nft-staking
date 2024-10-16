@@ -1,8 +1,6 @@
 import { program } from 'commander';
 import { PublicKey } from '@solana/web3.js';
 import {
-  lockPnft,
-  unlockPnft,
   lockCorenft,
   unlockCorenft,
   setClusterConfig,
@@ -47,10 +45,6 @@ programCommand('lock')
         await await lockCorenft(mint, keypair);
         break;
       }
-      case "Pnft": {
-        await await lockPnft(new PublicKey(mint));
-        break;
-      }
       default: {
         console.log('Nft Type is invalid');
         return;
@@ -81,10 +75,6 @@ programCommand('unlock')
     switch(nftType) {
       case "Corenft": {
         await unlockCorenft( mint, !owner ? undefined : new PublicKey(owner), keypair);
-        break;
-      }
-      case "Pnft": {
-        await unlockPnft( new PublicKey(mint), !owner ? undefined : new PublicKey(owner));
         break;
       }
       default: {
