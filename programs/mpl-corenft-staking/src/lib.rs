@@ -28,18 +28,4 @@ pub mod mpl_corenft_pnft_staking {
     pub fn unlock_corenft(ctx: Context<UnlockCoreNFT>) -> Result<()> {
         unlock_corenft::unlock_corenft_handler(ctx)
     }
-
-    /**
-     * User can lock pNFTs from specific collection
-     */
-    pub fn lock_pnft(ctx: Context<LockPNFT>) -> Result<()> {
-        lock_pnft::lock_pnft_handler(ctx)
-    }
-
-    /**
-     * User can unlock pNFTs when they want
-     */
-    pub fn unlock_pnft(ctx: Context<UnlockPNFT>) -> Result<()> {
-        unlock_pnft::unlock_pnft_handler(ctx)
-    }
 }
