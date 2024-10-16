@@ -12,8 +12,6 @@ import {
 
 import {
   createInitializeTx,
-  createLockPnftTx,
-  createUnlockPnftTx,
   createLockCorenftTx,
   createUnlockCorenftTx,
 } from "../lib/scripts";
@@ -137,37 +135,6 @@ export const unlockCorenft = async (asset: string, owner: PublicKey, keypair: st
       program,
       solConnection,
       keypair,
-      owner
-    );
-
-    await addAdminSignAndConfirm(tx);
-  } catch (e) {
-    console.log(e);
-  }
-};
-
-export const lockPnft = async (nftMint: PublicKey) => {
-  try {
-    const tx = await createLockPnftTx(
-      payer as anchor.Wallet,
-      nftMint,
-      program,
-      solConnection
-    );
-
-    await addAdminSignAndConfirm(tx);
-  } catch (e) {
-    console.log(e);
-  }
-};
-
-export const unlockPnft = async (nftMint: PublicKey, owner?: PublicKey) => {
-  try {
-    const tx = await createUnlockPnftTx(
-      payer as anchor.Wallet,
-      nftMint,
-      program,
-      solConnection,
       owner
     );
 
