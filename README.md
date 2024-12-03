@@ -132,13 +132,5 @@ X: [@derricklee918](https://x.com/derricklee918)
 
 Discord: [@solGuru](https://discordapp.com/users/352387576017190913)
 
-Medium: [@derricklee918]([https://medium.com/@derricklee918])
-
 Thanks.
 
-
-## Guides
-
-- **Anchor Guide**: If you're working with Anchor, check out the [Anchor Staking Example Guide](https://developers.metaplex.com/core/guides/anchor/anchor-staking-example) for step-by-step instructions.
-
-- **Typescript Guide**: For those preferring TypeScript, the [Web2 Typescript Staking Example Guide](https://developers.metaplex.com/core/guides/javascript/web2-typescript-staking-example) will help you get started.
