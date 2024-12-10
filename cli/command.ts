@@ -18,7 +18,6 @@ programCommand('init')
     console.log('RPC URL:', rpc);
 
     await setClusterConfig(env, keypair, rpc);
-    console.log('pass clusterconfig!!!!!!!!');
 
     await initProject();
   });
@@ -29,11 +28,7 @@ programCommand('lock')
   .option('-m, --mint <string>')
   .action(async (directory, cmd) => {
     const { env, keypair, rpc, mint } = cmd.opts();
-
-    console.log('Solana Cluster:', env);
-    console.log('Keypair Path:', keypair);
-    console.log('RPC URL:', rpc);
-
+    
     await setClusterConfig(env, keypair, rpc);
     if (mint === undefined) {
       console.log('Error token amount Input');
@@ -61,10 +56,6 @@ programCommand('unlock')
   .option('-o, --owner <string>') // nft owner address if force unstaking from admin
   .action(async (directory, cmd) => {
     const { env, keypair, rpc, mint, owner } = cmd.opts();
-
-    console.log('Solana Cluster:', env);
-    console.log('Keypair Path:', keypair);
-    console.log('RPC URL:', rpc);
 
     await setClusterConfig(env, keypair, rpc);
     if (mint === undefined) {
