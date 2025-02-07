@@ -28,10 +28,10 @@ pub struct LockCoreNFT<'info> {
     )]
     pub asset: Account<'info, BaseAssetV1>,
 
-    #[account(
-        mut,
-    )]
-    pub collection: Account<'info, BaseCollectionV1>,
+    // #[account(
+    //     mut,
+    // )]
+    // pub collection: Account<'info, BaseCollectionV1>,
     
     #[account(address = CORE_PROGRAM_ID)]
     /// CHECK: this will be checked by core
