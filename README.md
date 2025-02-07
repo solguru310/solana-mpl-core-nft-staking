@@ -130,6 +130,6 @@ Telegram: [@dwlee918](https://t.me/@dwlee918)
 
 X: [@dwlee918](https://x.com/dwlee918)
 
-Discord: [@solGuru](https://discordapp.com/users/352387576017190913)
+Linkedin: [@derrick-lee-wayne](https://linkedin.com/in/derrick-lee-wayne)
 
 
